@@ -1,3 +1,3 @@
 # totem-html-template-admin
 
-yarn parcel src/information.html
+```yarn parcel src/information.html```
