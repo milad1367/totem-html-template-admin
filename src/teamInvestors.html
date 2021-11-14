@@ -2,75 +2,81 @@
 <html lang="en">
   <head></head>
   <body>
-    <!-- start -->
-    <div style="display: flex; box-sizing: border-box; flex-wrap: wrap">
-      <div
-        style="
-          width: 50%;
+    <style>
+      .team-investors-container {
+        display: flex;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+      }
+      .team-investors-container-left {
+        width: 50%;
+        display: flex;
+        box-sizing: border-box;
+        padding: 25px;
+        flex-wrap: wrap;
+      }
+      .team-investors-container-left-div {
+        max-width: 261px;
+        width: 100%;
+        height: 169px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #30353e;
+        border-radius: 6px;
+        margin: 6px;
+      }
+
+      .team-investors-container-right {
+        width: 50%;
+        display: flex;
+        box-sizing: border-box;
+        padding: 25px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .item-investors-container-right-div {
+        background-color: #30353e;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        border-radius: 6px;
+        padding: 70px 0;
+      }
+      .team-investors-container-right-item {
+        height: 30px;
+        display: flex;
+        width: 33%;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        min-width: 200px;
+      }
+      @media (max-width: 1300px) {
+        .item-investors-container-right-div {
+          background-color: #30353e;
           display: flex;
-          box-sizing: border-box;
-          padding: 25px;
           flex-wrap: wrap;
-        "
-      >
-        <div
-          style="
-            max-width: 261px;
-            width: 100%;
-            height: 169px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #30353e;
-            border-radius: 6px;
-            margin: 6px;
-          "
-        >
+          width: 100%;
+          border-radius: 6px;
+          padding: 70px 0;
+          justify-content: center;
+        }
+      }
+
+      .team-investors-container-img {
+        object-fit: cover;
+      }
+    </style>
+    <!-- start -->
+    <div class="team-investors-container">
+      <div class="team-investors-container-left">
+        <div class="team-investors-container-left-div">
           <div>
             <img
-              width="125px"
-              height="101px"
-              style="border-radius: 50%"
-              src="./img/download.jpeg"
-            />
-          </div>
-          <div>
-            <span style="color: white; font-size: 16px">Bett chen</span>
-            <a href=""
-              ><span
-                style="
-                  display: inline-block;
-                  width: 16px;
-                  height: 16px;
-                  background-color: #82858b;
-                "
-              >
-                in
-              </span></a
-            >
-            <div style="font-size: 14px; opacity: 0.4; color: white">
-              Co-founder
-            </div>
-          </div>
-        </div>
-        <div
-          style="
-            max-width: 261px;
-            width: 100%;
-            height: 169px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #30353e;
-            border-radius: 6px;
-            margin: 6px;
-          "
-        >
-          <div>
-            <img
-              width="125px"
+              class="team-investors-container-img"
+              width="101px"
               height="101px"
               style="border-radius: 50%"
               src="./img/download.jpeg"
@@ -96,72 +102,39 @@
           </div>
         </div>
       </div>
-      <div
-        style="
-          width: 50%;
-          display: flex;
-          box-sizing: border-box;
-          padding: 25px;
-          justify-content: space-around;
-        "
-      >
-        <div
-          style="
-            background-color: #30353e;
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-            border-radius: 6px;
-            padding: 70px 0;
-          "
-        >
-          <div
-            style="
-              height: 30px;
-              display: flex;
-              width: 33%;
-              margin-bottom: 50px;
-              display: flex;
-              justify-content: center;
-            "
-          >
-            <img width="125px" height="30px" src="./img/download.jpeg" />
+      <div class="team-investors-container-right">
+        <div class="item-investors-container-right-div">
+          <div class="team-investors-container-right-item">
+            <img
+              class="team-investors-container-img"
+              width="125px"
+              height="30px"
+              src="./img/download.jpeg"
+            />
           </div>
-          <div
-            style="
-              height: 30px;
-              display: flex;
-              width: 33%;
-              margin-bottom: 50px;
-              display: flex;
-              justify-content: center;
-            "
-          >
-            <img width="125px" height="30px" src="./img/download.jpeg" />
+          <div class="team-investors-container-right-item">
+            <img
+              class="team-investors-container-img"
+              width="125px"
+              height="30px"
+              src="./img/download.jpeg"
+            />
           </div>
-          <div
-            style="
-              height: 30px;
-              display: flex;
-              width: 33%;
-              margin-bottom: 50px;
-              display: flex;
-              justify-content: center;
-            "
-          >
-            <img width="125px" height="30px" src="./img/download.jpeg" />
+          <div class="team-investors-container-right-item">
+            <img
+              class="team-investors-container-img"
+              width="125px"
+              height="30px"
+              src="./img/download.jpeg"
+            />
           </div>
-          <div
-            style="
-              height: 30px;
-              display: flex;
-              width: 33%;
-              margin-bottom: 50px;
-              display: flex;
-              justify-content: center;
-            "
-          >
-            <img width="125px" height="30px" src="./img/download.jpeg" />
+          <div class="team-investors-container-right-item">
+            <img
+              class="team-investors-container-img"
+              width="125px"
+              minHeight="30px"
+              src="./img/download.jpeg"
+            />
           </div>
         </div>
       </div>
