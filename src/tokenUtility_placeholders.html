@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <style>
+      .token-utility-container {
+        display: flex;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+      }
+      .token-utility-container-item {
+        width: 50%;
+        display: flex;
+        box-sizing: border-box;
+        padding: 10px 24px;
+      }
+      @media (max-width: 1000px) {
+        .token-utility-container-item {
+          width: 100%;
+        }
+      }
+    </style>
+    <div class="token-utility-container">
+      <!-- Start loop -->
+      <div class="token-utility-container-item">
+        <div
+          style="
+            display: flex;
+            background-color: #30353e;
+            padding: 23px;
+            box-sizing: border-box;
+            border-radius: 6px;
+            flex: 1 1 auto;
+            height: 169px;
+          "
+        >
+          <div style="display: flex; align-items: center">
+            <img
+              width="82px"
+              height="82px"
+              style="border-radius: 10%"
+              src="{{placeholder_img_src}}"
+            />
+          </div>
+          <div
+            style="
+              color: #ffffff;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              padding: 0 24px;
+              max-width: 379px;
+              line-height: 21px;
+            "
+          >
+            <div style="font-size: 16px; font-weight: bold">
+              {{placeholder_title}}
+            </div>
+            <div style="font-size: 16px">{{placeholder_description}}</div>
+          </div>
+        </div>
+      </div>
+      <!-- End loop -->
+    </div>
+  </body>
+</html>
