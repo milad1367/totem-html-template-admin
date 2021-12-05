@@ -15,7 +15,6 @@
       }
       .spark-ido-information-container-left-img {
         width: 100%;
-        height: 100%;
         height: 348px;
         border-radius: 6px;
       }
@@ -24,8 +23,7 @@
         color: white;
         background-color: #30353e;
         max-width: 535px;
-        min-width: 300px;
-        max-height: 348px;
+        min-height: 348px;
         padding: 28px;
         box-sizing: border-box;
         border-radius: 6px;
@@ -37,12 +35,13 @@
         }
         .spark-ido-information-container-left {
           width: 100%;
-          min-width: 320px;
+        }
+        .spark-ido-information-container-left-img {
+          height: auto;
         }
         .spark-ido-information-container-right {
           margin-top: 20px;
           width: 100%;
-          min-width: 320px;
         }
       }
     </style>
@@ -58,7 +57,9 @@
         <div style="padding-bottom: 40px; line-height: 21px">
           {{placeholders_description}}
         </div>
-        <div style="display: flex; justify-content: space-around">
+        <div
+          style="display: flex; justify-content: space-around; flex-wrap: wrap"
+        >
           <img
             src="{{placeholders_img_src}}"
             style="width: 62px; height: 62px; border-radius: 50%"
