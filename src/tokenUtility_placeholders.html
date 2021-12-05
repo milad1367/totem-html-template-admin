@@ -15,26 +15,41 @@
         box-sizing: border-box;
         padding: 10px 24px;
       }
+      .spark-ido-token-utility-container-item-body {
+        display: flex;
+        background-color: #30353e;
+        padding: 23px;
+        box-sizing: border-box;
+        border-radius: 6px;
+        flex: 1 1 auto;
+        min-height: 169px;
+        flex-wrap: wrap;
+      }
+      .spark-ido-token-utility-container-item-body-description {
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0 24px;
+        max-width: 379px;
+        line-height: 21px;
+      }
       @media (max-width: 1000px) {
         .spark-ido-token-utility-container-item {
           width: 100%;
+          padding: 10px 0px;
+        }
+      }
+      @media (max-width: 610px) {
+        .spark-ido-token-utility-container-item-body-description {
+          padding: 20px 0 0 0;
         }
       }
     </style>
     <div class="spark-ido-token-utility-container">
       <!-- Start loop -->
       <div class="spark-ido-token-utility-container-item">
-        <div
-          style="
-            display: flex;
-            background-color: #30353e;
-            padding: 23px;
-            box-sizing: border-box;
-            border-radius: 6px;
-            flex: 1 1 auto;
-            height: 169px;
-          "
-        >
+        <div class="spark-ido-token-utility-container-item-body">
           <div style="display: flex; align-items: center">
             <img
               width="82px"
@@ -43,17 +58,7 @@
               src="{{placeholder_img_src}}"
             />
           </div>
-          <div
-            style="
-              color: #ffffff;
-              display: flex;
-              flex-direction: column;
-              justify-content: space-around;
-              padding: 0 24px;
-              max-width: 379px;
-              line-height: 21px;
-            "
-          >
+          <div class="spark-ido-token-utility-container-item-body-description">
             <div style="font-size: 16px; font-weight: bold">
               {{placeholder_title}}
             </div>
