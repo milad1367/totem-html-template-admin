@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <style>
+      body {
+        background-color: #000000;
+      }
+
+      .spark-project-token-sale-table {
+        border-collapse: collapse;
+      }
+      .spark-project-token-sale-table-headers {
+        border-bottom: 1px solid rgba(182, 182, 180, 0.1);
+      }
+      .spark-project-token-sale-table-headers > th {
+        padding: 21px 22px 29px 22px;
+        text-align: left;
+        font-size: 14px;
+        color: #8e9092;
+      }
+      .spark-project-token-sale-table-tbody > tr {
+        border-bottom: 1px solid rgba(182, 182, 180, 0.1);
+      }
+      .spark-project-token-sale-table-tbody > tr:last-child {
+        border-bottom: none;
+      }
+
+      .spark-project-token-sale-table-tr > td {
+        padding: 21px 22px 29px 22px;
+        text-align: left;
+        font-size: 16px;
+        color: white;
+        font-weight: bolder;
+      }
+      .spark-project-token-sale-table-td-total {
+        color: #8d28cd !important;
+      }
+    </style>
+    <div class="spark-project-token-sale row">
+      <div class="col-md-8 col-xs-12">
+        <div>
+          <table class="spark-project-token-sale-table">
+            <thead>
+              <tr class="spark-project-token-sale-table-headers">
+                <th><span>stage</span></th>
+                <th>percent</th>
+                <th>spark</th>
+                <th>price</th>
+                <th>total</th>
+              </tr>
+            </thead>
+            <tbody class="spark-project-token-sale-table-tbody">
+              <tr class="spark-project-token-sale-table-tr">
+                <td>seed</td>
+                <td>2%</td>
+                <td>12313188</td>
+                <td>0.08123</td>
+                <td>465464</td>
+              </tr>
+              <tr class="spark-project-token-sale-table-tr">
+                <td><span>Strategic Round</span></td>
+                <td>Maria</td>
+                <td>Germany</td>
+                <td>Maria</td>
+                <td>Germany</td>
+              </tr>
+              <tr class="spark-project-token-sale-table-tr">
+                <td><span>Strategic Round</span></td>
+                <td>Maria</td>
+                <td>Germany</td>
+                <td>Maria</td>
+                <td>Germany</td>
+              </tr>
+              <tr class="spark-project-token-sale-table-tr">
+                <td><span>Strategic Round</span></td>
+                <td>Maria</td>
+                <td>Germany</td>
+                <td>Maria</td>
+                <td>Germany</td>
+              </tr>
+
+              <tr class="spark-project-token-sale-table-tr">
+                <td class="spark-project-token-sale-table-td-total">total</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="spark-project-token-sale-table-td-total">243</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div className="col-md-4 col-xs-12">
+        <ProjectTokenSaleSum />
+      </div>
+    </div>
+  </body>
+</html>
