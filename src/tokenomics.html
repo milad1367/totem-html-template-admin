@@ -2,6 +2,12 @@
 <html lang="en">
   <head></head>
   <body>
+    <script>
+      function imgOnError(self) {
+        self.onerror = null;
+        self.src = "https://placeimg.com/270/160/animals";
+      }
+    </script>
     <style>
       .spark-project-tokenomics {
         display: flex;
@@ -26,8 +32,7 @@
         padding-bottom: 16px;
       }
       .spark-project-tokenomics-supply-items-item-img {
-        max-width: 260px;
-        width: 100%;
+        width: 260px;
         min-height: 170px;
         border-radius: 6px;
       }
@@ -98,13 +103,15 @@
           <div class="spark-project-tokenomics-supply-items-item">
             <img
               class="spark-project-tokenomics-supply-items-item-img"
-              src="https://i.picsum.photos/id/866/260/170.jpg?hmac=x7YUHA5qNCmrWtjuGcg7iGdhVD6mSsF9Wrp_EdVspHQ"
+              src="https://i.picsum.photos/id/866/260/170.jpg?hmac=x7YUH5qNCmrWtjuGcg7iGdhVD6mSsF9Wrp_EdVspHQ"
+              onerror="this.onerror=null;this.src='https://placeimg.com/270/160/animals'"
             />
           </div>
           <div class="spark-project-tokenomics-supply-items-item">
             <img
               class="spark-project-tokenomics-supply-items-item-img"
-              src="https://i.picsum.photos/id/866/260/170.jpg?hmac=x7YUHA5qNCmrWtjuGcg7iGdhVD6mSsF9Wrp_EdVspHQ"
+              src="https://i.picsum.photos/id/866/260/170.jpg?hmac=x7YUH5qNCmrWtjuGcg7iGdhVD6mSsF9Wrp_EdVspHQ"
+              onerror="this.onerror=null;this.src='https://placeimg.com/270/160/animals'"
             />
           </div>
           <div class="spark-project-tokenomics-supply-items-item">
